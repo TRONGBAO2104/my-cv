@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  /* backdrop-filter: blur(5px); */
+}
+
+body {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+  background-image: url(https://wallpaperaccess.com/download/full-hd-138805);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: Arial, Helvetica, sans-serif;
+  /* backdrop-filter: blur(5px); <= ???? */
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  flex-grow: 1;
+}
+
+.card-wrapper {
+  padding-top: 80px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.322);
+  padding: 80px 30px 30px 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  position: relative;
+}
+
+.portrait-half {
+  width: 160px;
+  height: 80px;
+  border: 5px solid rgba(255, 255, 255, 0.322);
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.portrait {
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.6435-9/88204961_2844831978940438_3662800220867002368_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=F5JPEAmCJqIAX8DkLSf&_nc_ht=scontent.fsgn2-3.fna&oh=00_AT_41fkhrqr1SkwPz_ER1rLBLGSyf7wyoD-zsSUlIT4ZIA&oe=62D3C410);
+  background-size: cover;
+}
+
+.name {
+  font-weight: 700;
+  text-transform: Uppercase;
+  color: rgb(83, 63, 40);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 30px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.author {
+  text-align: end;
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media a {
+  color: rgb(83, 63, 40);
+}
+
+a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.fa-brands {
+  margin-top: 15px;
+  margin-right: 5px;
+  font-size: 2em;
+  font-weight: 400;
+}
